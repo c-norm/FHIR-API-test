@@ -1,0 +1,3515 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a8392e3f-c0dd-49c3-bc18-342840ae0d81"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/cmc-ectd-document-32p10"/>
+  </meta>
+  <identifier>
+    <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-ig-version">
+      <valueString value="0.1.19"/>
+    </extension>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:4fe88f0c-9d78-4b24-8af6-4fe2a01bd2bc"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2024-01-02T23:44:30.210Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:e21209a2-ae73-457f-b0df-05139336784a"/>
+    <resource>
+      <Composition>
+        <id value="e21209a2-ae73-457f-b0df-05139336784a"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/ectd-composition-32p10"/>
+        </meta>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-comp-section-types"/>
+            <code value="32P10"/>
+            <display value="Product Description and Composition of the Drug Product"/>
+          </coding>
+        </type>
+        <date value="2024-01-02T23:44:30.210Z"/>
+        <author>
+          <reference value="urn:uuid:0e659ae1-22a9-47be-be47-dec835b567ee"/>
+        </author>
+        <title value="eCTD Product Description and Composition for DemoDrug"/>
+        <section>
+          <title value="Product Description for DemoDrug"/>
+          <entry>
+            <reference value="urn:uuid:215f5c11-1ca2-4277-9ffd-9311a8a27003"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Product Composition for DemoDrug"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-comp-section-types"/>
+              <code value="32P12"/>
+              <display value="Product Composition"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:b9ede2c9-2494-41fc-aadd-d8e009f35c44"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Container Closure Description for DemoDrug"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-comp-section-types"/>
+              <code value="32P13"/>
+              <display value="Product Container Closure Description"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:4f51b934-b948-4783-9224-d59dc54ecf08"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4f51b934-b948-4783-9224-d59dc54ecf08"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="4f51b934-b948-4783-9224-d59dc54ecf08"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-drugproduct-container-closure"/>
+        </meta>
+        <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-container-closure-extension">
+          <extension url="containerType">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C43168"/>
+                <display value="BLISTER PACK"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="closureType">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C96118"/>
+                <display value="Tamper-evident, Plastic"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="description">
+            <valueMarkdown value="a blister pack with tamper-evident plastic"/>
+          </extension>
+        </extension>
+        <name>
+          <productName value="CLOPIDOGREL 100mg, ACETAMINOPHEN 250mg, ASPIRIN 250mg"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-product-name-types"/>
+              <code value="NON"/>
+              <display value="Non-Proprietary"/>
+            </coding>
+            <text value="Non-Proprietary"/>
+          </type>
+          <part>
+            <part value="CLOPIDOGREL"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="100mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="ACETAMINOPHEN"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="250mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="ASPIRIN"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="250mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:215f5c11-1ca2-4277-9ffd-9311a8a27003"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="215f5c11-1ca2-4277-9ffd-9311a8a27003"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-drug-product-description"/>
+        </meta>
+        <description value="a 2 layer extended release tablet; pink ER layer has 1 API and white layer has 2 API"/>
+        <combinedPharmaceuticalDoseForm>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42998"/>
+            <display value="TABLET"/>
+          </coding>
+        </combinedPharmaceuticalDoseForm>
+        <route>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C38288"/>
+            <display value="ORAL"/>
+          </coding>
+        </route>
+        <name>
+          <productName value="CLOPIDOGREL 100mg, ACETAMINOPHEN 250mg, ASPIRIN 250mg"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-product-name-types"/>
+              <code value="NON"/>
+              <display value="Non-Proprietary"/>
+            </coding>
+            <text value="Non-Proprietary"/>
+          </type>
+          <part>
+            <part value="CLOPIDOGREL"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="100mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="ACETAMINOPHEN"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="250mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="ASPIRIN"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="250mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b9ede2c9-2494-41fc-aadd-d8e009f35c44"/>
+    <resource>
+      <ManufacturedItemDefinition>
+        <id value="b9ede2c9-2494-41fc-aadd-d8e009f35c44"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-product-part"/>
+        </meta>
+        <identifier>
+          <value value="DemoDrug"/>
+        </identifier>
+        <status value="draft"/>
+        <manufacturedDoseForm>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42998"/>
+            <display value="TABLET"/>
+          </coding>
+        </manufacturedDoseForm>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="OvrRelsProf"/>
+              <display value="Product Overall Release Profile"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="102"/>
+              <display value="ER"/>
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="CoatInd"/>
+              <display value="Coating Indicator"/>
+            </coding>
+          </type>
+          <valueBoolean value="false"/>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="Schematic"/>
+              <display value="Product Schematic"/>
+            </coding>
+          </type>
+          <valueAttachment>
+            <contentType value="image/png"/>
+            <data value="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"/>
+            <title value="demoSchematic.png"/>
+          </valueAttachment>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="WgtTyp"/>
+              <display value="Product Weight Type"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C168628"/>
+              <display value="Mass"/>
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="TotWgtNum"/>
+              <display value="Product Total Weight Numeric Numerator"/>
+            </coding>
+          </type>
+          <valueQuantity>
+            <value value="870"/>
+            <unit value="mg"/>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C28253"/>
+          </valueQuantity>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="QualStd"/>
+              <display value="Quality Standard"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134009"/>
+              <display value="Company Standard"/>
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="OvrRelsMech"/>
+              <display value="Product Overall Release Mechanism"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="106"/>
+              <display value="Matrix"/>
+            </coding>
+          </valueCodeableConcept>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="TabLayCnt"/>
+              <display value="Tablet Layer Count"/>
+            </coding>
+          </type>
+          <valueQuantity>
+            <value value="2"/>
+          </valueQuantity>
+        </property>
+        <property>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="TotWgtDen"/>
+              <display value="Product Total Weight Numeric Denominator"/>
+            </coding>
+          </type>
+          <valueQuantity>
+            <value value="1"/>
+            <unit value="{tbl}"/>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C48542"/>
+          </valueQuantity>
+        </property>
+        <component>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="115"/>
+              <display value="Layer"/>
+            </coding>
+          </type>
+          <function>
+            <text value="Extended release layer"/>
+          </function>
+          <amount>
+            <value value="200"/>
+            <unit value="mg"/>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C28253"/>
+          </amount>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.01"/>
+            </extension>
+            <amount>
+              <value value="2"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176667"/>
+                <display value="Waterrepelling agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:cb4b48cc-4f5c-4a39-829a-50c39bc3717a"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.5"/>
+            </extension>
+            <amount>
+              <value value="100"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C82533"/>
+                <display value="Active Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:a6e661bd-4733-4aad-9e78-ba5f4a897a16"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.065"/>
+            </extension>
+            <amount>
+              <value value="13"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42656"/>
+                <display value="Coloring agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:61c1a014-d8b8-4969-b71a-6bebbe794917"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.15"/>
+            </extension>
+            <amount>
+              <value value="30"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42648"/>
+                <display value="Disintegrant"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:eea90ec8-8c07-465e-8273-f636c0595328"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.05"/>
+            </extension>
+            <amount>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42647"/>
+                <display value="Binder"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:2273f749-151b-45d8-879a-2b8b538f15b5"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.05"/>
+            </extension>
+            <amount>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42656"/>
+                <display value="Coloring agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:5a01e9e0-3fee-4e9c-ad32-3f18f6709bb5"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.075"/>
+            </extension>
+            <amount>
+              <value value="15"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176653"/>
+                <display value="Matrixforming agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:4895530d-95cb-407f-90bf-af1fd5371038"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.025"/>
+            </extension>
+            <amount>
+              <value value="5"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176651"/>
+                <display value="Humectant"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:52f788ca-767a-40fe-9a6a-75baed41ffc9"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.075"/>
+            </extension>
+            <amount>
+              <value value="15"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="150"/>
+                <display value="Intragranular"/>
+              </coding>
+              <text value="Pink Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176640"/>
+                <display value="Solubilizing agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:61b14a63-3769-4868-9d2e-4c38d91879f9"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="PPiD"/>
+                <display value="Product Part Identifier"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <text value="LayerA"/>
+            </valueCodeableConcept>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="RelsProf"/>
+                <display value="Product Part Release Profile"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="102"/>
+                <display value="ER"/>
+              </coding>
+            </valueCodeableConcept>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="ContPercent"/>
+                <display value="Product Part Content Percent"/>
+              </coding>
+            </type>
+            <valueQuantity>
+              <value value="0.22989"/>
+            </valueQuantity>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="RelsMech"/>
+                <display value="Product Part Release Mechanism"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="106"/>
+                <display value="Matrix"/>
+              </coding>
+            </valueCodeableConcept>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="Color"/>
+                <display value="Product Part Color Description"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <text value="pink"/>
+            </valueCodeableConcept>
+          </property>
+        </component>
+        <component>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="115"/>
+              <display value="Layer"/>
+            </coding>
+          </type>
+          <function>
+            <text value="Immediate release layer"/>
+          </function>
+          <amount>
+            <value value="670"/>
+            <unit value="mg"/>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C28253"/>
+          </amount>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.037313"/>
+            </extension>
+            <amount>
+              <value value="25"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42647"/>
+                <display value="Binder"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:4895530d-95cb-407f-90bf-af1fd5371038"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.047761"/>
+            </extension>
+            <amount>
+              <value value="32"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="150"/>
+                <display value="Intragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42648"/>
+                <display value="Disintegrant"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:eea90ec8-8c07-465e-8273-f636c0595328"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.023881"/>
+            </extension>
+            <amount>
+              <value value="16"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42647"/>
+                <display value="Binder"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:2273f749-151b-45d8-879a-2b8b538f15b5"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.032836"/>
+            </extension>
+            <amount>
+              <value value="22"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="150"/>
+                <display value="Intragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42656"/>
+                <display value="Coloring agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:5a01e9e0-3fee-4e9c-ad32-3f18f6709bb5"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.01791"/>
+            </extension>
+            <amount>
+              <value value="12"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176667"/>
+                <display value="Waterrepelling agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:cb4b48cc-4f5c-4a39-829a-50c39bc3717a"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.373134"/>
+            </extension>
+            <amount>
+              <value value="250"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C82533"/>
+                <display value="Active Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:e31cadcb-1211-4f2d-ad5e-02abb021a3dc"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.373134"/>
+            </extension>
+            <amount>
+              <value value="250"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="148"/>
+                <display value="Active core/granulate"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C82533"/>
+                <display value="Active Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:e5eea0ab-b062-4bca-b11a-b340bcba96cf"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.041791"/>
+            </extension>
+            <amount>
+              <value value="28"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42647"/>
+                <display value="Binder"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:4b10459d-f4b5-4414-b6c5-8dce79d5779e"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.008955"/>
+            </extension>
+            <amount>
+              <value value="6"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42739"/>
+                <display value="Surfactant"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:6b4678fa-4ff2-4e9f-8185-09a75489309c"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.022388"/>
+            </extension>
+            <amount>
+              <value value="15"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="150"/>
+                <display value="Intragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42656"/>
+                <display value="Coloring agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:054d2a4a-ff88-4a9a-b6c7-225a31106f71"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.008955"/>
+            </extension>
+            <amount>
+              <value value="6"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="149"/>
+                <display value="Extragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42653"/>
+                <display value="Lubricant"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:ffac222b-62bd-4e62-a5d7-1bc2d4debb32"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <constituent>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/content-percent">
+              <valueDecimal value="0.01194"/>
+            </extension>
+            <amount>
+              <value value="8"/>
+              <unit value="mg"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C28253"/>
+            </amount>
+            <location>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="150"/>
+                <display value="Intragranular"/>
+              </coding>
+              <text value="White Layer"/>
+            </location>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C42637"/>
+                <display value="Inactive Ingredient"/>
+              </coding>
+              <text value="category"/>
+            </function>
+            <function>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C176640"/>
+                <display value="Solubilizing agent"/>
+              </coding>
+              <text value="function"/>
+            </function>
+            <hasIngredient>
+              <reference>
+                <reference value="urn:uuid:d908f96e-139a-400a-9152-0317ccacdc6e"/>
+              </reference>
+            </hasIngredient>
+          </constituent>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="PPiD"/>
+                <display value="Product Part Identifier"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <text value="LayerB"/>
+            </valueCodeableConcept>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="RelsProf"/>
+                <display value="Product Part Release Profile"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="103"/>
+                <display value="IR"/>
+              </coding>
+            </valueCodeableConcept>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="ContPercent"/>
+                <display value="Product Part Content Percent"/>
+              </coding>
+            </type>
+            <valueQuantity>
+              <value value="0.77011"/>
+            </valueQuantity>
+          </property>
+          <property>
+            <type>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="Color"/>
+                <display value="Product Part Color Description"/>
+              </coding>
+            </type>
+            <valueCodeableConcept>
+              <text value="white"/>
+            </valueCodeableConcept>
+          </property>
+        </component>
+      </ManufacturedItemDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:a6e661bd-4733-4aad-9e78-ba5f4a897a16"/>
+    <resource>
+      <Ingredient>
+        <id value="a6e661bd-4733-4aad-9e78-ba5f4a897a16"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C82533"/>
+            <display value="Active Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:305ef7bb-6a0b-4b15-aea3-396717fd198c"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.1149"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="100"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="100mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e31cadcb-1211-4f2d-ad5e-02abb021a3dc"/>
+    <resource>
+      <Ingredient>
+        <id value="e31cadcb-1211-4f2d-ad5e-02abb021a3dc"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C82533"/>
+            <display value="Active Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:fa031e3a-32d1-46a6-853c-7481dedcd665"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.2874"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="250mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e5eea0ab-b062-4bca-b11a-b340bcba96cf"/>
+    <resource>
+      <Ingredient>
+        <id value="e5eea0ab-b062-4bca-b11a-b340bcba96cf"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C82533"/>
+            <display value="Active Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:130ee607-c9cc-4af7-9bdd-ed06f76fe428"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.2874"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="250"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="250mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:cb4b48cc-4f5c-4a39-829a-50c39bc3717a"/>
+    <resource>
+      <Ingredient>
+        <id value="cb4b48cc-4f5c-4a39-829a-50c39bc3717a"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:eecac008-7505-4d8b-a26d-6e79dc3b9f07"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0161"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="14"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="14mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61c1a014-d8b8-4969-b71a-6bebbe794917"/>
+    <resource>
+      <Ingredient>
+        <id value="61c1a014-d8b8-4969-b71a-6bebbe794917"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:1df9b075-e885-4e29-99ec-42cf85e802e0"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0149"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="13"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="13mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eea90ec8-8c07-465e-8273-f636c0595328"/>
+    <resource>
+      <Ingredient>
+        <id value="eea90ec8-8c07-465e-8273-f636c0595328"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:867ffe63-eb88-4285-ade8-471e587c33ac"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0713"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="62"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="62mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2273f749-151b-45d8-879a-2b8b538f15b5"/>
+    <resource>
+      <Ingredient>
+        <id value="2273f749-151b-45d8-879a-2b8b538f15b5"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:b81736bf-e92c-4350-a64d-1d85877b6398"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0299"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="26"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="26mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:5a01e9e0-3fee-4e9c-ad32-3f18f6709bb5"/>
+    <resource>
+      <Ingredient>
+        <id value="5a01e9e0-3fee-4e9c-ad32-3f18f6709bb5"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:026de5fb-2015-436b-9ac1-472c06c182fc"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0368"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="32"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="32mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4895530d-95cb-407f-90bf-af1fd5371038"/>
+    <resource>
+      <Ingredient>
+        <id value="4895530d-95cb-407f-90bf-af1fd5371038"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:9328a76a-716b-4980-a8a7-d4caec4ce608"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.046"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="40"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="40mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:52f788ca-767a-40fe-9a6a-75baed41ffc9"/>
+    <resource>
+      <Ingredient>
+        <id value="52f788ca-767a-40fe-9a6a-75baed41ffc9"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:6f6e314b-aefa-4def-b969-a3987f5d9828"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0057"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="5"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="5mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61b14a63-3769-4868-9d2e-4c38d91879f9"/>
+    <resource>
+      <Ingredient>
+        <id value="61b14a63-3769-4868-9d2e-4c38d91879f9"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:766ab30b-a788-4342-86ab-732da566316f"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0172"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="15"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="15mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4b10459d-f4b5-4414-b6c5-8dce79d5779e"/>
+    <resource>
+      <Ingredient>
+        <id value="4b10459d-f4b5-4414-b6c5-8dce79d5779e"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:af5f9fbe-099c-44b0-bfff-1e390c0a3036"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0322"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="28"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="28mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6b4678fa-4ff2-4e9f-8185-09a75489309c"/>
+    <resource>
+      <Ingredient>
+        <id value="6b4678fa-4ff2-4e9f-8185-09a75489309c"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:c31a84e7-1a43-453f-b49d-1664e258982f"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0069"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="6"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="6mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:054d2a4a-ff88-4a9a-b6c7-225a31106f71"/>
+    <resource>
+      <Ingredient>
+        <id value="054d2a4a-ff88-4a9a-b6c7-225a31106f71"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:57fbea09-a89b-47b8-a860-ec87e866825b"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0172"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="15"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="15mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ffac222b-62bd-4e62-a5d7-1bc2d4debb32"/>
+    <resource>
+      <Ingredient>
+        <id value="ffac222b-62bd-4e62-a5d7-1bc2d4debb32"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:61b8f148-4299-4fcf-9e5d-4a62120d5fc2"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0069"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="6"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="6mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d908f96e-139a-400a-9152-0317ccacdc6e"/>
+    <resource>
+      <Ingredient>
+        <id value="d908f96e-139a-400a-9152-0317ccacdc6e"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component"/>
+        </meta>
+        <status value="draft"/>
+        <role>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C42637"/>
+            <display value="Inactive Ingredient"/>
+          </coding>
+        </role>
+        <substance>
+          <code>
+            <reference>
+              <reference value="urn:uuid:366c9308-ff57-415f-940b-4696ca6e1e32"/>
+            </reference>
+          </code>
+          <strength>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/strength-extension">
+              <extension url="strengthType">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C168628"/>
+                    <display value="Mass"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <extension url="contentPercent">
+                <valueDecimal value="0.0092"/>
+              </extension>
+            </extension>
+            <presentationRatio>
+              <numerator>
+                <value value="8"/>
+                <unit value="mg"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C28253"/>
+              </numerator>
+              <denominator>
+                <value value="1"/>
+                <unit value="[arb'U]"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C75765"/>
+              </denominator>
+            </presentationRatio>
+            <textPresentation value="8mg/1[arb'U]"/>
+          </strength>
+        </substance>
+      </Ingredient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:305ef7bb-6a0b-4b15-aea3-396717fd198c"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="305ef7bb-6a0b-4b15-aea3-396717fd198c"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="Clopidogrel"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134006"/>
+            <display value="USP-NF"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="A74586SNO7"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="CLOPIDOGREL"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:fa031e3a-32d1-46a6-853c-7481dedcd665"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="fa031e3a-32d1-46a6-853c-7481dedcd665"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="acetaminophen"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134006"/>
+            <display value="USP-NF"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="362O9ITL9D"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="ACETAMINOPHEN"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:130ee607-c9cc-4af7-9bdd-ed06f76fe428"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="130ee607-c9cc-4af7-9bdd-ed06f76fe428"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="aspirin"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134006"/>
+            <display value="USP-NF"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="R16CO5Y76E"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="ASPIRIN"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eecac008-7505-4d8b-a26d-6e79dc3b9f07"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="eecac008-7505-4d8b-a26d-6e79dc3b9f07"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="CarnubaWax"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="17"/>
+            <display value="Mixture"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="R12CBM0EIZ"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="CARNAUBA WAX"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C14258"/>
+              <display value="Plant"/>
+            </coding>
+          </type>
+          <genus>
+            <text value="Copernicia"/>
+          </genus>
+          <species>
+            <text value="prunifera"/>
+          </species>
+          <part>
+            <text value="leaf"/>
+          </part>
+          <countryOfOrigin>
+            <coding>
+              <system value="urn:iso:std:iso:3166"/>
+              <code value="CAN"/>
+              <display value="Canada"/>
+            </coding>
+          </countryOfOrigin>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1df9b075-e885-4e29-99ec-42cf85e802e0"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="1df9b075-e885-4e29-99ec-42cf85e802e0"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="ferricOxideRed"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134007"/>
+            <display value="EP"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="1K09F3G675"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="FERRIC OXIDE RED"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:867ffe63-eb88-4285-ade8-471e587c33ac"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="867ffe63-eb88-4285-ade8-471e587c33ac"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="Microcrystalline cellulose"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="3"/>
+            <display value="Polymer"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="OP1R32D61U"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="MICROCRYSTALLINE CELLULOSE"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <name>
+          <name value="Cellulose Gel"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="139"/>
+              <display value="Common"/>
+            </coding>
+          </type>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:b81736bf-e92c-4350-a64d-1d85877b6398"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="b81736bf-e92c-4350-a64d-1d85877b6398"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="lactoseMonohydrate"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="EWQ57Q8I5X"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="LACTOSE MONOHYDRATE"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <name>
+          <name value="Lactose Hydrate"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="139"/>
+              <display value="Common"/>
+            </coding>
+          </type>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:026de5fb-2015-436b-9ac1-472c06c182fc"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="026de5fb-2015-436b-9ac1-472c06c182fc"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="titanium dioxide"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:8a3eec61-2111-4886-b4e0-e46b6003e6f6"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="15FIX9V2JP"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="TITANIUM DIOXIDE"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9328a76a-716b-4980-a8a7-d4caec4ce608"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="9328a76a-716b-4980-a8a7-d4caec4ce608"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="hydroxypropylcellulose"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="3"/>
+            <display value="Polymer"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="RFW2ET671P"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="HYDROXYPROPYL CELLULOSE (160000 WAMW)"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:6f6e314b-aefa-4def-b969-a3987f5d9828"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="6f6e314b-aefa-4def-b969-a3987f5d9828"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="triacetin"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="XHX3C3X673"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="TRIACETIN"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:766ab30b-a788-4342-86ab-732da566316f"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="766ab30b-a788-4342-86ab-732da566316f"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="CastorOilDemo"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="9"/>
+            <display value="Structurally Diverse Substance - Herbal"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="D5340Y2I9G"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="CASTOR OIL"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C14258"/>
+              <display value="Plant"/>
+            </coding>
+          </type>
+          <genus>
+            <text value="Ricinus"/>
+          </genus>
+          <species>
+            <text value="communis"/>
+          </species>
+          <part>
+            <text value="seed"/>
+          </part>
+          <countryOfOrigin>
+            <coding>
+              <system value="urn:iso:std:iso:3166"/>
+              <code value="USA"/>
+              <display value="United States of America"/>
+            </coding>
+          </countryOfOrigin>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:af5f9fbe-099c-44b0-bfff-1e390c0a3036"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="af5f9fbe-099c-44b0-bfff-1e390c0a3036"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="povidone"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="FZ989GH94E"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="POVIDONE"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c31a84e7-1a43-453f-b49d-1664e258982f"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="c31a84e7-1a43-453f-b49d-1664e258982f"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="propyleneGlycol"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="6DC9Q167V3"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="PROPYLENE GLYCOL"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <name>
+          <name value="E-1520"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="139"/>
+              <display value="Common"/>
+            </coding>
+          </type>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:57fbea09-a89b-47b8-a860-ec87e866825b"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="57fbea09-a89b-47b8-a860-ec87e866825b"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="Blue No. 1"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="17"/>
+            <display value="Mixture"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="H3R47K3TBD"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="FD&amp;C BLUE NO. 1"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61b8f148-4299-4fcf-9e5d-4a62120d5fc2"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="61b8f148-4299-4fcf-9e5d-4a62120d5fc2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="benzoicAcid"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134007"/>
+            <display value="EP"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="8SKN0B0MIM"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="BENZOIC ACID"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:366c9308-ff57-415f-940b-4696ca6e1e32"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="366c9308-ff57-415f-940b-4696ca6e1e32"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-component-substance"/>
+        </meta>
+        <identifier>
+          <value value="Stearic acid"/>
+        </identifier>
+        <classification>
+          <coding>
+            <system value="https://www.ema.europa.eu"/>
+            <code value="1"/>
+            <display value="Chemical"/>
+          </coding>
+        </classification>
+        <grade>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C134009"/>
+            <display value="Company Standard"/>
+          </coding>
+        </grade>
+        <manufacturer>
+          <reference value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        </manufacturer>
+        <supplier>
+          <reference value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        </supplier>
+        <code>
+          <code>
+            <coding>
+              <system value="https://gsrs.ncats.nih.gov"/>
+              <code value="4ELV7Z65AP"/>
+            </coding>
+          </code>
+        </code>
+        <name>
+          <name value="STEARIC ACID"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="141"/>
+              <display value="GSRS Preferred"/>
+            </coding>
+          </type>
+          <preferred value="true"/>
+        </name>
+        <sourceMaterial>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48807"/>
+              <display value="Chemical"/>
+            </coding>
+          </type>
+        </sourceMaterial>
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:0e659ae1-22a9-47be-be47-dec835b567ee"/>
+    <resource>
+      <Organization>
+        <id value="0e659ae1-22a9-47be-be47-dec835b567ee"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/cmc-sponsor-organization"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134003"/>
+              <display value="DUNS"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.519.1"/>
+          <value value="143265222"/>
+        </identifier>
+        <name value="test site A"/>
+        <contact>
+          <address>
+            <text value="test site A, 123 Broad Way, new york, ny, United States"/>
+            <line value="123 Broad Way"/>
+            <city value="new york"/>
+            <state value="ny"/>
+            <postalCode value="100000"/>
+            <country value="United States"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+    <resource>
+      <Organization>
+        <id value="e44076c9-1c64-488b-8e77-922e3fe3804f"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/mfg-test-site-organization"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134003"/>
+              <display value="DUNS"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.519.1"/>
+          <value value="143265222"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134004"/>
+              <display value="FEI"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.82"/>
+          <value value="6981397"/>
+        </identifier>
+        <name value="test site A"/>
+        <contact>
+          <address>
+            <text value="test site A, 123 Broad Way, new york, ny, United States"/>
+            <line value="123 Broad Way"/>
+            <city value="new york"/>
+            <state value="ny"/>
+            <postalCode value="100000"/>
+            <country value="United States"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:12d30109-5090-4abd-aa52-4aa1de721d94"/>
+    <resource>
+      <Organization>
+        <id value="12d30109-5090-4abd-aa52-4aa1de721d94"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/mfg-test-site-organization"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134003"/>
+              <display value="DUNS"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.519.1"/>
+          <value value="143265222"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134004"/>
+              <display value="FEI"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.82"/>
+          <value value="6981397"/>
+        </identifier>
+        <name value="test site B"/>
+        <contact>
+          <address>
+            <text value="test site B, 350 W Main Street, Rochester, NY, United States"/>
+            <line value="350 W Main Street"/>
+            <city value="Rochester"/>
+            <state value="NY"/>
+            <postalCode value="14608"/>
+            <country value="United States"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8a3eec61-2111-4886-b4e0-e46b6003e6f6"/>
+    <resource>
+      <Organization>
+        <id value="8a3eec61-2111-4886-b4e0-e46b6003e6f6"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/mfg-test-site-organization"/>
+        </meta>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134003"/>
+              <display value="DUNS"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.519.1"/>
+          <value value="143265222"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134004"/>
+              <display value="FEI"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.82"/>
+          <value value="6981397"/>
+        </identifier>
+        <name value="test site C"/>
+        <contact>
+          <address>
+            <text value="test site C, 100 Stillwater Avenue, Building #2, bangor, me, United States"/>
+            <line value="100 Stillwater Avenue"/>
+            <line value="Building #2"/>
+            <city value="bangor"/>
+            <state value="me"/>
+            <postalCode value="04401"/>
+            <country value="United States"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="4a7e17c1-a611-4cc7-9a71-8005a8b427ab"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/cmc-ectd-document-sp4151"/>
+  </meta>
+  <identifier>
+    <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-ig-version">
+      <valueString value="0.1.17"/>
+    </extension>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:34a0748d-b199-4a2e-a5bc-0f880886fef7"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2023-12-15T22:33:13.089Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:d332acdf-4874-407b-9950-528f14c6bea2"/>
+    <resource>
+      <Composition>
+        <id value="d332acdf-4874-407b-9950-528f14c6bea2"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/ectd-composition-sp4151"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="d332acdf-4874-407b-9950-528f14c6bea2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;d332acdf-4874-407b-9950-528f14c6bea2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ectd-composition-sp4151.html">eCTD Specification Composition</a></p></div><p><b>identifier</b>: id: ExampleSpecification</p><p><b>status</b>: final</p><p><b>type</b>: Quality Specification <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-comp-section-types.html">Code System PQCMC Comp Section Types</a>#SP4151)</span></p><p><b>date</b>: 2023-12-15 22:33:13+0000</p><p><b>author</b>: <a href="#Organization_4f3e9af1-306b-4fad-bf04-7881400b266a">See above (urn:uuid:4f3e9af1-306b-4fad-bf04-7881400b266a)</a></p><p><b>title</b>: Quality Specification for an example Drug Product</p></div>
+        </text>
+        <identifier>
+          <value value="ExampleSpecification"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-comp-section-types"/>
+            <code value="SP4151"/>
+            <display value="Quality Specification"/>
+          </coding>
+        </type>
+        <date value="2023-12-15T22:33:13.089Z"/>
+        <author>
+          <reference value="urn:uuid:4f3e9af1-306b-4fad-bf04-7881400b266a"/>
+        </author>
+        <title value="Quality Specification for an example Drug Product"/>
+        <section>
+          <title value="32P51"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-comp-section-types"/>
+              <code value="32P51"/>
+              <display value="Product Specification"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:aa514363-d43f-4052-b44e-b67aa4d6dee7"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:aa514363-d43f-4052-b44e-b67aa4d6dee7"/>
+    <resource>
+      <PlanDefinition>
+        <id value="aa514363-d43f-4052-b44e-b67aa4d6dee7"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-quality-specification"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="aa514363-d43f-4052-b44e-b67aa4d6dee7"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;aa514363-d43f-4052-b44e-b67aa4d6dee7&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pqcmc-quality-specification.html">Quality Specification</a></p></div><p><b>Specification Type</b>: Drug Product <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134021)</span></p><p><b>identifier</b>: id: ExampleSpecification</p><p><b>version</b>: 1.0</p><p><b>title</b>: Quality Specification for Buffered Asprin</p><p><b>status</b>: active</p><p><b>subject</b>: <a href="#MedicinalProductDefinition_89676a69-1fe7-422c-ab00-92abe4ef6ea9">See above (urn:uuid:89676a69-1fe7-422c-ab00-92abe4ef6ea9)</a></p><p><b>date</b>: 2022-12-08</p><h3>UseContexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>Workflow Setting (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code workflow = 'Workflow Setting', stated as 'Workflow Setting')</td><td>Not Approved <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134011)</span></td></tr></table><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>32649771-1290-4386-9cf7-7a72274f22b4</blockquote><p><b>description</b>: Average of 10 between 2-3 pH <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>2-3 pH</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>59a4ca76-858e-4d58-8e5f-88e75f51ec33</blockquote><p><b>description</b>: Maxima only at the same wavelengths compared to reference standard <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Conforms <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C48793 &quot;EQ&quot;)</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>c40aa176-e6aa-4fe4-869d-6550ee992903</blockquote><p><b>description</b>: &lt;= 0.5 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>0.5 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>b122987d-586c-481b-951c-6202e660158d</blockquote><p><b>description</b>: Color of solution is clear <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Conforms <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C48793 &quot;EQ&quot;)</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>929747ad-e83a-46f0-bbbc-133ee951e819</blockquote><p><b>description</b>: &lt;= 0.05 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>0.05 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>8d7c85c2-7a4b-432e-ac94-226f296e4fca</blockquote><p><b>description</b>: No Particulate Matter detected <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>pass <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C48793 &quot;EQ&quot;)</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>de4f962a-d486-486d-8d84-f2d1635646b4</blockquote><p><b>description</b>: &lt;= 0.014 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>0.014 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>b46dce64-a009-46cd-ab95-21d1d5b4df77</blockquote><p><b>description</b>: &lt;= 0.04 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>0.04 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>5566f501-37e1-49fb-8783-b20c074ec0c3</blockquote><p><b>description</b>: &lt;= 0.001 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>0.001 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>db19e3ab-e28b-4477-8bd7-2409093ed5a3</blockquote><p><b>description</b>: Color intenssity of feriric ammonium sulfate TS is not less that than salicylic acid (0.1%) solution <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>pass <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C48793 &quot;EQ&quot;)</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>82370588-7aae-4556-9262-a7f50dbd01aa</blockquote><p><b>description</b>: Ethanol &lt; 0.2% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Ethanol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>0.2 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>cae2da87-c4b7-43d0-9e8e-c64d0d4df6c2</blockquote><p><b>description</b>: Ethyl Ether &lt; 0.1% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Ethyl Ether <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>0.1 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>28ad4d5b-d975-4f6e-9792-b3d9cc7ce279</blockquote><p><b>description</b>: 1—propanol &lt; 0.15% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>1—propanol <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>0.15 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>33fa051c-6b3c-4e4d-bd4e-09d39fc253b3</blockquote><p><b>description</b>: Total &lt; 0.5% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>Total Residual Solvents <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>0.5 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>9100e938-42ff-4004-8473-ed5090d66f3a</blockquote><p><b>description</b>: 99.5 - 100.5 % <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span>, Stability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134030)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>99.5-100.5 percent</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>af260128-f105-4692-ba40-49f21f12ad46</blockquote><p><b>description</b>: n=6 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>6</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>31d9dcac-bf72-420b-a415-c924155a83f4</blockquote><p><b>description</b>: Each unit is NLT Q + 5% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>85 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>47c0d685-0b23-4637-9af8-a554e4fad7ec</blockquote><p><b>description</b>: n=6 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>6</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>14d3dee8-e024-4367-b0a2-a2a809303ee0</blockquote><p><b>description</b>: Average of 12 units (S1 + S2) is equal to or greater than Q and no unit is less than Q – 15% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><blockquote><p><b>target</b></p><p><b>measure</b>: Average of 12 units <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>detail</b>: 80 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: unit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>detail</b>: 65 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></p></blockquote></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>15309a78-92a9-4cf9-aee1-452d6d2f7a91</blockquote><p><b>description</b>: Average of 24 units (S1 + S2 + S3) is equal to or greater than Q, not more than 2 units are less than Q – 15%, no unit is less than Q – 25% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><blockquote><p><b>target</b></p><p><b>measure</b>: Average of 24 units <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>detail</b>: 80 percent<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C48570 = '%')</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: units less than Q – 15% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>detail</b>: 2 amb a 1 units<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C92953 = '[Amb'a'1'U]')</span></p></blockquote><blockquote><p><b>target</b></p><p><b>measure</b>: units less than Q – 25% <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>detail</b>: 0 amb a 1 units<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy code C92953 = '[Amb'a'1'U]')</span></p></blockquote></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>666ace1e-bd29-4263-9ae2-2391106326bb</blockquote><p><b>description</b>: n=12 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>addresses</b>: Release <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C134029)</span></p><h3>Targets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail[x]</b></td></tr><tr><td style="display: none">*</td><td>12</td></tr></table></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2047a6b6-e3fc-4071-8989-526297579091</blockquote><p><b>Test Order | Stage Sequence Order</b>: 1.1</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Spectrophotometry Identification</p><p><b>description</b>: Alternate</p><p><b>code</b>: Spectrophotometry <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Identification <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC7)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;197&gt;</td></tr></table><p><b>goalId</b>: 32649771-1290-4386-9cf7-7a72274f22b4</p><h3>RelatedActions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetId</b></td><td><b>Relationship</b></td></tr><tr><td style="display: none">*</td><td>84d64dd8-b799-418a-a713-a854c4d3c2b9</td><td>concurrent</td></tr></table><p><b>selectionBehavior</b>: exactly-one</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>84d64dd8-b799-418a-a713-a854c4d3c2b9</blockquote><p><b>Test Order | Stage Sequence Order</b>: 1.2</p><p><b>linkId</b>: 2047a6b6-e3fc-4071-8989-526297579091</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Identity - Ferric Chloride</p><p><b>description</b>: Alternate</p><p><b>code</b>: HPLC <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96103 &quot;Proprietary&quot;)</span></p><p><b>reason</b>: Identification <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC7)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>EX-TEST-01</td></tr></table><p><b>goalId</b>: 59a4ca76-858e-4d58-8e5f-88e75f51ec33</p><h3>RelatedActions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetId</b></td><td><b>Relationship</b></td></tr><tr><td style="display: none">*</td><td>2047a6b6-e3fc-4071-8989-526297579091</td><td>concurrent</td></tr></table><p><b>selectionBehavior</b>: exactly-one</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>838e66ce-f4b0-47a5-8ea0-aa7882a84303</blockquote><p><b>Test Order | Stage Sequence Order</b>: 2</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Loss on Drying</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Loss on Drying <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC12)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;731&gt;</td></tr></table><p><b>goalId</b>: c40aa176-e6aa-4fe4-869d-6550ee992903</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>3510686b-fb93-4980-a41c-0a3754be7f37</blockquote><p><b>Test Order | Stage Sequence Order</b>: 3</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Readily Carbonizable Sub</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Organoleptic <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC6)</span>, Color of solution <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC22)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;271&gt;</td></tr></table><p><b>goalId</b>: b122987d-586c-481b-951c-6202e660158d</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>b2e18cc4-f494-4ef0-be34-810d8d4b439b</blockquote><p><b>Test Order | Stage Sequence Order</b>: 4</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Residue on ignition (Ash)</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Residue on Ignition <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC38)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;281&gt;</td></tr></table><p><b>goalId</b>: 929747ad-e83a-46f0-bbbc-133ee951e819</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>d315a1c3-dd93-498d-8ae3-dc0d4b3bec75</blockquote><p><b>Test Order | Stage Sequence Order</b>: 5</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Substances insoluble in sodium carbonate TS</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96103 &quot;Proprietary&quot;)</span></p><p><b>reason</b>: Foreign and Particulate Matter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC11)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>EX-TEST-02</td></tr></table><p><b>goalId</b>: 8d7c85c2-7a4b-432e-ac94-226f296e4fca</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>6ec15bbc-a78a-4351-9ad8-fcf97e839ab9</blockquote><p><b>Test Order | Stage Sequence Order</b>: 6</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Impurities - Chloride (Cl)</p><p><b>code</b>: FTIR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC53)</span>, Specified identified impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC92)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;221&gt;</td></tr></table><p><b>goalId</b>: de4f962a-d486-486d-8d84-f2d1635646b4</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>fa31b425-896c-4b25-b693-ccdd14e0c8ee</blockquote><p><b>Test Order | Stage Sequence Order</b>: 7</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Impurities - Sulfate (SO4)</p><p><b>code</b>: FTIR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC53)</span>, Specified identified impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC92)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;221&gt;</td></tr></table><p><b>goalId</b>: b46dce64-a009-46cd-ab95-21d1d5b4df77</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>cef5aa1a-8770-4f78-9bc3-da9f18b77e5c</blockquote><p><b>Test Order | Stage Sequence Order</b>: 8</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Elemental Impurities - Limits</p><p><b>code</b>: UV <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC53)</span>, elemental impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC98)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;231&gt;</td></tr></table><p><b>goalId</b>: 5566f501-37e1-49fb-8783-b20c074ec0c3</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>d5871ee2-8b06-414c-91b4-4b30f5881c8a</blockquote><p><b>Test Order | Stage Sequence Order</b>: 9</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Limit of Free Salicylic Acid</p><p><b>code</b>: Titration <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96103 &quot;Proprietary&quot;)</span></p><p><b>reason</b>: Impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC53)</span>, Impurities/Degradation Products/Related Substances <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC100)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>EX-TEST-03</td></tr></table><p><b>goalId</b>: db19e3ab-e28b-4477-8bd7-2409093ed5a3</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>e192fc72-c4b1-419f-8098-6f65037a3962</blockquote><p><b>Test Order | Stage Sequence Order</b>: 10</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Organic Volatile Impurities</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96102 &quot;Compendial&quot;)</span></p><p><b>reason</b>: Impurity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC53)</span>, residual solvent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC101)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>USP &lt;467&gt;</td></tr></table><p><b>goalId</b>: 82370588-7aae-4556-9262-a7f50dbd01aa, cae2da87-c4b7-43d0-9e8e-c64d0d4df6c2, 28ad4d5b-d975-4f6e-9792-b3d9cc7ce279, 33fa051c-6b3c-4e4d-bd4e-09d39fc253b3</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>b7e88ea0-3c61-49db-86ec-8d01f8b7667b</blockquote><p><b>Test Order | Stage Sequence Order</b>: 11</p><p><b>prefix</b>: Single Stage</p><p><b>title</b>: Assay Dry Basis</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96103 &quot;Proprietary&quot;)</span></p><p><b>reason</b>: Assay <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC1)</span>, active ingredient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#SUBC2)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>EX-TEST-04</td></tr></table><p><b>goalId</b>: 9100e938-42ff-4004-8473-ed5090d66f3a</p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>6d1ba5a8-6590-496a-ad6b-ca68cfda2878</blockquote><p><b>Test Order | Stage Sequence Order</b>: 12</p><p><b>title</b>: Dissolution - 30 minute</p><p><b>code</b>: Visual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C96103 &quot;Proprietary&quot;)</span></p><p><b>reason</b>: Dissolution <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-pqcmc-test-category-codes.html">Hierarchical Test Category Codes</a>#TC9)</span></p><h3>Documentations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Label</b></td></tr><tr><td style="display: none">*</td><td>documentation</td><td>EX-TEST-05</td></tr></table><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>LinkId</b></td><td><b>Prefix</b></td><td><b>GoalId</b></td></tr><tr><td style="display: none">*</td><td/><td>6d1ba5a8-6590-496a-ad6b-ca68cfda2878</td><td>Stage 1</td><td>af260128-f105-4692-ba40-49f21f12ad46, 31d9dcac-bf72-420b-a415-c924155a83f4</td></tr><tr><td style="display: none">*</td><td/><td>6d1ba5a8-6590-496a-ad6b-ca68cfda2878</td><td>Stage 2</td><td>47c0d685-0b23-4637-9af8-a554e4fad7ec, 14d3dee8-e024-4367-b0a2-a2a809303ee0</td></tr><tr><td style="display: none">*</td><td/><td>6d1ba5a8-6590-496a-ad6b-ca68cfda2878</td><td>Stage 3</td><td>15309a78-92a9-4cf9-aee1-452d6d2f7a91, 666ace1e-bd29-4263-9ae2-2391106326bb</td></tr></table></blockquote></div>
+        </text>
+        <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-specification-type-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134021"/>
+              <display value="Drug Product"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <value value="ExampleSpecification"/>
+        </identifier>
+        <version value="1.0"/>
+        <title value="Quality Specification for Buffered Asprin"/>
+        <status value="active"/>
+        <subjectReference>
+          <reference value="urn:uuid:89676a69-1fe7-422c-ab00-92abe4ef6ea9"/>
+        </subjectReference>
+        <date value="2022-12-08"/>
+        <useContext>
+          <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="workflow"/>
+            <display value="Workflow Setting"/>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134011"/>
+              <display value="Not Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </useContext>
+        <goal id="32649771-1290-4386-9cf7-7a72274f22b4">
+          <description>
+            <text value="Average of 10 between 2-3 pH"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailRange>
+              <low>
+                <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                      <code value="C61583"/>
+                      <display value="NLT (not less than)"/>
+                    </coding>
+                  </valueCodeableConcept>
+                </extension>
+                <value value="2"/>
+                <unit value="pH"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C45997"/>
+              </low>
+              <high>
+                <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                      <code value="C61585"/>
+                      <display value="LT (less than)"/>
+                    </coding>
+                  </valueCodeableConcept>
+                </extension>
+                <value value="3"/>
+                <unit value="pH"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C45997"/>
+              </high>
+            </detailRange>
+          </target>
+        </goal>
+        <goal id="59a4ca76-858e-4d58-8e5f-88e75f51ec33">
+          <description>
+            <text value="Maxima only at the same wavelengths compared to reference standard"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48793"/>
+                <display value="EQ"/>
+              </coding>
+              <text value="Conforms"/>
+            </detailCodeableConcept>
+          </target>
+        </goal>
+        <goal id="c40aa176-e6aa-4fe4-869d-6550ee992903">
+          <description>
+            <text value="&lt;= 0.5 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61586"/>
+                    <display value="NMT (not more than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.5"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="b122987d-586c-481b-951c-6202e660158d">
+          <description>
+            <text value="Color of solution is clear"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48793"/>
+                <display value="EQ"/>
+              </coding>
+              <text value="Conforms"/>
+            </detailCodeableConcept>
+          </target>
+        </goal>
+        <goal id="929747ad-e83a-46f0-bbbc-133ee951e819">
+          <description>
+            <text value="&lt;= 0.05 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61586"/>
+                    <display value="NMT (not more than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.05"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="8d7c85c2-7a4b-432e-ac94-226f296e4fca">
+          <description>
+            <text value="No Particulate Matter detected"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48793"/>
+                <display value="EQ"/>
+              </coding>
+              <text value="pass"/>
+            </detailCodeableConcept>
+          </target>
+        </goal>
+        <goal id="de4f962a-d486-486d-8d84-f2d1635646b4">
+          <description>
+            <text value="&lt;= 0.014 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61586"/>
+                    <display value="NMT (not more than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.014"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="b46dce64-a009-46cd-ab95-21d1d5b4df77">
+          <description>
+            <text value="&lt;= 0.04 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61586"/>
+                    <display value="NMT (not more than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.04"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="5566f501-37e1-49fb-8783-b20c074ec0c3">
+          <description>
+            <text value="&lt;= 0.001 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61586"/>
+                    <display value="NMT (not more than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.001"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="db19e3ab-e28b-4477-8bd7-2409093ed5a3">
+          <description>
+            <text value="Color intenssity of feriric ammonium sulfate TS is not less that than salicylic acid (0.1%) solution"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailCodeableConcept>
+              <coding>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48793"/>
+                <display value="EQ"/>
+              </coding>
+              <text value="pass"/>
+            </detailCodeableConcept>
+          </target>
+        </goal>
+        <goal id="82370588-7aae-4556-9262-a7f50dbd01aa">
+          <description>
+            <text value="Ethanol &lt; 0.2%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="Ethanol"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.2"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="cae2da87-c4b7-43d0-9e8e-c64d0d4df6c2">
+          <description>
+            <text value="Ethyl Ether &lt; 0.1%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="Ethyl Ether"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.1"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="28ad4d5b-d975-4f6e-9792-b3d9cc7ce279">
+          <description>
+            <text value="1—propanol &lt; 0.15%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="1—propanol"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.15"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="33fa051c-6b3c-4e4d-bd4e-09d39fc253b3">
+          <description>
+            <text value="Total &lt; 0.5%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="Total Residual Solvents"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0.5"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="9100e938-42ff-4004-8473-ed5090d66f3a">
+          <description>
+            <text value="99.5 - 100.5 %"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134030"/>
+              <display value="Stability"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailRange>
+              <low>
+                <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                      <code value="C61583"/>
+                      <display value="NLT (not less than)"/>
+                    </coding>
+                  </valueCodeableConcept>
+                </extension>
+                <value value="99.5"/>
+                <unit value="percent"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48570"/>
+              </low>
+              <high>
+                <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                  <valueCodeableConcept>
+                    <coding>
+                      <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                      <code value="C61586"/>
+                      <display value="NMT (not more than)"/>
+                    </coding>
+                  </valueCodeableConcept>
+                </extension>
+                <value value="100.5"/>
+                <unit value="percent"/>
+                <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                <code value="C48570"/>
+              </high>
+            </detailRange>
+          </target>
+        </goal>
+        <goal id="af260128-f105-4692-ba40-49f21f12ad46">
+          <description>
+            <text value="n=6"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailInteger value="6"/>
+          </target>
+        </goal>
+        <goal id="31d9dcac-bf72-420b-a415-c924155a83f4">
+          <description>
+            <text value="Each unit is NLT Q + 5%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61583"/>
+                    <display value="NLT (not less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="85"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="47c0d685-0b23-4637-9af8-a554e4fad7ec">
+          <description>
+            <text value="n=6"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailInteger value="6"/>
+          </target>
+        </goal>
+        <goal id="14d3dee8-e024-4367-b0a2-a2a809303ee0">
+          <description>
+            <text value="Average of 12 units (S1 + S2) is equal to or greater than Q and no unit is less than Q – 15%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="Average of 12 units"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61583"/>
+                    <display value="NLT (not less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="80"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+          <target>
+            <measure>
+              <text value="unit"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="65"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="15309a78-92a9-4cf9-aee1-452d6d2f7a91">
+          <description>
+            <text value="Average of 24 units (S1 + S2 + S3) is equal to or greater than Q, not more than 2 units are less than Q – 15%, no unit is less than Q – 25%"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <measure>
+              <text value="Average of 24 units"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61583"/>
+                    <display value="NLT (not less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="80"/>
+              <unit value="percent"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C48570"/>
+            </detailQuantity>
+          </target>
+          <target>
+            <measure>
+              <text value="units less than Q – 15%"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61583"/>
+                    <display value="NLT (not less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="2"/>
+              <unit value="amb a 1 units"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C92953"/>
+            </detailQuantity>
+          </target>
+          <target>
+            <measure>
+              <text value="units less than Q – 25%"/>
+            </measure>
+            <detailQuantity>
+              <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-interpretation-code-extension">
+                <valueCodeableConcept>
+                  <coding>
+                    <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+                    <code value="C61585"/>
+                    <display value="LT (less than)"/>
+                  </coding>
+                </valueCodeableConcept>
+              </extension>
+              <value value="0"/>
+              <unit value="amb a 1 units"/>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C92953"/>
+            </detailQuantity>
+          </target>
+        </goal>
+        <goal id="666ace1e-bd29-4263-9ae2-2391106326bb">
+          <description>
+            <text value="n=12"/>
+          </description>
+          <addresses>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134029"/>
+              <display value="Release"/>
+            </coding>
+          </addresses>
+          <target>
+            <detailInteger value="12"/>
+          </target>
+        </goal>
+        <action id="2047a6b6-e3fc-4071-8989-526297579091">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="1.1"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Spectrophotometry Identification"/>
+          <description value="Alternate"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="Spectrophotometry"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC7"/>
+              <display value="Identification"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;197&gt;"/>
+          </documentation>
+          <goalId value="32649771-1290-4386-9cf7-7a72274f22b4"/>
+          <relatedAction>
+            <targetId value="84d64dd8-b799-418a-a713-a854c4d3c2b9"/>
+            <relationship value="concurrent"/>
+          </relatedAction>
+          <selectionBehavior value="exactly-one"/>
+        </action>
+        <action id="84d64dd8-b799-418a-a713-a854c4d3c2b9">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="1.2"/>
+          </extension>
+          <linkId value="2047a6b6-e3fc-4071-8989-526297579091"/>
+          <prefix value="Single Stage"/>
+          <title value="Identity - Ferric Chloride"/>
+          <description value="Alternate"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96103"/>
+              <display value="Proprietary"/>
+            </coding>
+            <text value="HPLC"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC7"/>
+              <display value="Identification"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="EX-TEST-01"/>
+          </documentation>
+          <goalId value="59a4ca76-858e-4d58-8e5f-88e75f51ec33"/>
+          <relatedAction>
+            <targetId value="2047a6b6-e3fc-4071-8989-526297579091"/>
+            <relationship value="concurrent"/>
+          </relatedAction>
+          <selectionBehavior value="exactly-one"/>
+        </action>
+        <action id="838e66ce-f4b0-47a5-8ea0-aa7882a84303">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="2"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Loss on Drying"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC12"/>
+              <display value="Loss on Drying"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;731&gt;"/>
+          </documentation>
+          <goalId value="c40aa176-e6aa-4fe4-869d-6550ee992903"/>
+        </action>
+        <action id="3510686b-fb93-4980-a41c-0a3754be7f37">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="3"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Readily Carbonizable Sub"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC6"/>
+              <display value="Organoleptic"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC22"/>
+              <display value="Color of solution"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;271&gt;"/>
+          </documentation>
+          <goalId value="b122987d-586c-481b-951c-6202e660158d"/>
+        </action>
+        <action id="b2e18cc4-f494-4ef0-be34-810d8d4b439b">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="4"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Residue on ignition (Ash)"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC38"/>
+              <display value="Residue on Ignition"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;281&gt;"/>
+          </documentation>
+          <goalId value="929747ad-e83a-46f0-bbbc-133ee951e819"/>
+        </action>
+        <action id="d315a1c3-dd93-498d-8ae3-dc0d4b3bec75">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="5"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Substances insoluble in sodium carbonate TS"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96103"/>
+              <display value="Proprietary"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC11"/>
+              <display value="Foreign and Particulate Matter"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="EX-TEST-02"/>
+          </documentation>
+          <goalId value="8d7c85c2-7a4b-432e-ac94-226f296e4fca"/>
+        </action>
+        <action id="6ec15bbc-a78a-4351-9ad8-fcf97e839ab9">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="6"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Impurities - Chloride (Cl)"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="FTIR"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC53"/>
+              <display value="Impurity"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC92"/>
+              <display value="Specified identified impurity"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;221&gt;"/>
+          </documentation>
+          <goalId value="de4f962a-d486-486d-8d84-f2d1635646b4"/>
+        </action>
+        <action id="fa31b425-896c-4b25-b693-ccdd14e0c8ee">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="7"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Impurities - Sulfate (SO4)"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="FTIR"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC53"/>
+              <display value="Impurity"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC92"/>
+              <display value="Specified identified impurity"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;221&gt;"/>
+          </documentation>
+          <goalId value="b46dce64-a009-46cd-ab95-21d1d5b4df77"/>
+        </action>
+        <action id="cef5aa1a-8770-4f78-9bc3-da9f18b77e5c">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="8"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Elemental Impurities - Limits"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="UV"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC53"/>
+              <display value="Impurity"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC98"/>
+              <display value="elemental impurity"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;231&gt;"/>
+          </documentation>
+          <goalId value="5566f501-37e1-49fb-8783-b20c074ec0c3"/>
+        </action>
+        <action id="d5871ee2-8b06-414c-91b4-4b30f5881c8a">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="9"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Limit of Free Salicylic Acid"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96103"/>
+              <display value="Proprietary"/>
+            </coding>
+            <text value="Titration"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC53"/>
+              <display value="Impurity"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC100"/>
+              <display value="Impurities/Degradation Products/Related Substances"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="EX-TEST-03"/>
+          </documentation>
+          <goalId value="db19e3ab-e28b-4477-8bd7-2409093ed5a3"/>
+        </action>
+        <action id="e192fc72-c4b1-419f-8098-6f65037a3962">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="10"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Organic Volatile Impurities"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96102"/>
+              <display value="Compendial"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC53"/>
+              <display value="Impurity"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC101"/>
+              <display value="residual solvent"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="USP &lt;467&gt;"/>
+          </documentation>
+          <goalId value="82370588-7aae-4556-9262-a7f50dbd01aa"/>
+          <goalId value="cae2da87-c4b7-43d0-9e8e-c64d0d4df6c2"/>
+          <goalId value="28ad4d5b-d975-4f6e-9792-b3d9cc7ce279"/>
+          <goalId value="33fa051c-6b3c-4e4d-bd4e-09d39fc253b3"/>
+        </action>
+        <action id="b7e88ea0-3c61-49db-86ec-8d01f8b7667b">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="11"/>
+          </extension>
+          <prefix value="Single Stage"/>
+          <title value="Assay Dry Basis"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96103"/>
+              <display value="Proprietary"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC1"/>
+              <display value="Assay"/>
+            </coding>
+          </reason>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="2"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="SUBC2"/>
+              <display value="active ingredient"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="EX-TEST-04"/>
+          </documentation>
+          <goalId value="9100e938-42ff-4004-8473-ed5090d66f3a"/>
+        </action>
+        <action id="6d1ba5a8-6590-496a-ad6b-ca68cfda2878">
+          <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+            <valueDecimal value="12"/>
+          </extension>
+          <title value="Dissolution - 30 minute"/>
+          <code>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C96103"/>
+              <display value="Proprietary"/>
+            </coding>
+            <text value="Visual"/>
+          </code>
+          <reason>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-hierarchical-level-extension">
+              <valueInteger value="1"/>
+            </extension>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/pqcmc-test-category-codes"/>
+              <code value="TC9"/>
+              <display value="Dissolution"/>
+            </coding>
+          </reason>
+          <documentation>
+            <type value="documentation"/>
+            <label value="EX-TEST-05"/>
+          </documentation>
+          <action>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+              <valueDecimal value="1"/>
+            </extension>
+            <linkId value="6d1ba5a8-6590-496a-ad6b-ca68cfda2878"/>
+            <prefix value="Stage 1"/>
+            <goalId value="af260128-f105-4692-ba40-49f21f12ad46"/>
+            <goalId value="31d9dcac-bf72-420b-a415-c924155a83f4"/>
+          </action>
+          <action>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+              <valueDecimal value="2"/>
+            </extension>
+            <linkId value="6d1ba5a8-6590-496a-ad6b-ca68cfda2878"/>
+            <prefix value="Stage 2"/>
+            <goalId value="47c0d685-0b23-4637-9af8-a554e4fad7ec"/>
+            <goalId value="14d3dee8-e024-4367-b0a2-a2a809303ee0"/>
+          </action>
+          <action>
+            <extension url="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pq-order-extension">
+              <valueDecimal value="3"/>
+            </extension>
+            <linkId value="6d1ba5a8-6590-496a-ad6b-ca68cfda2878"/>
+            <prefix value="Stage 3"/>
+            <goalId value="15309a78-92a9-4cf9-aee1-452d6d2f7a91"/>
+            <goalId value="666ace1e-bd29-4263-9ae2-2391106326bb"/>
+          </action>
+        </action>
+      </PlanDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:89676a69-1fe7-422c-ab00-92abe4ef6ea9"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="89676a69-1fe7-422c-ab00-92abe4ef6ea9"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/pqcmc-routine-drug-product"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicinalProductDefinition</b><a name="89676a69-1fe7-422c-ab00-92abe4ef6ea9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicinalProductDefinition &quot;89676a69-1fe7-422c-ab00-92abe4ef6ea9&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pqcmc-routine-drug-product.html">Routine Drug Product</a></p></div><p><b>identifier</b>: id: Example2BeadDrug</p><p><b>combinedPharmaceuticalDoseForm</b>: CAPSULE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C25158)</span></p><p><b>route</b>: ORAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-ncit-dummy.html">Dummy NCIT Codesystem</a>#C38288)</span></p><blockquote><p><b>name</b></p><p><b>productName</b>: OXAZEPAM 30mg, PROPRANOLOL HYDROCHLORIDE 60mg</p><p><b>type</b>: Non-Proprietary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cmc-product-name-types.html">Product Name Types Code Types</a>#NON)</span></p><blockquote><p><b>part</b></p><p><b>part</b>: OXAZEPAM</p><p><b>type</b>: scientific name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">EntityNamePartQualifierR2</a>#SCI)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 30mg</p><p><b>type</b>: strength name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">EntityNamePartQualifierR2</a>#STR)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: PROPRANOLOL HYDROCHLORIDE</p><p><b>type</b>: scientific name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">EntityNamePartQualifierR2</a>#SCI)</span></p></blockquote><blockquote><p><b>part</b></p><p><b>part</b>: 60mg</p><p><b>type</b>: strength name <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-EntityNamePartQualifierR2.html">EntityNamePartQualifierR2</a>#STR)</span></p></blockquote></blockquote></div>
+        </text>
+        <identifier>
+          <value value="Example2BeadDrug"/>
+        </identifier>
+        <combinedPharmaceuticalDoseForm>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C25158"/>
+            <display value="CAPSULE"/>
+          </coding>
+        </combinedPharmaceuticalDoseForm>
+        <route>
+          <coding>
+            <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+            <code value="C38288"/>
+            <display value="ORAL"/>
+          </coding>
+        </route>
+        <name>
+          <productName value="OXAZEPAM 30mg, PROPRANOLOL HYDROCHLORIDE 60mg"/>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-product-name-types"/>
+              <code value="NON"/>
+              <display value="Non-Proprietary"/>
+            </coding>
+            <text value="Non-Proprietary"/>
+          </type>
+          <part>
+            <part value="OXAZEPAM"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="30mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="PROPRANOLOL HYDROCHLORIDE"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="SCI"/>
+              </coding>
+            </type>
+          </part>
+          <part>
+            <part value="60mg"/>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2"/>
+                <code value="STR"/>
+              </coding>
+            </type>
+          </part>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4f3e9af1-306b-4fad-bf04-7881400b266a"/>
+    <resource>
+      <Organization>
+        <id value="4f3e9af1-306b-4fad-bf04-7881400b266a"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/pq-cmc/StructureDefinition/cmc-sponsor-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="4f3e9af1-306b-4fad-bf04-7881400b266a"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;4f3e9af1-306b-4fad-bf04-7881400b266a&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cmc-sponsor-organization.html">Sponsor Organization</a></p></div><p><b>identifier</b>: DUNS: 143265222</p><p><b>name</b>: Wunderwerke</p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Address</b></td></tr><tr><td style="display: none">*</td><td>Wunderwerke, 123 Scenic Road, CT, Bridgeport, USA 65478</td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/pq-cmc/CodeSystem/cmc-ncit-dummy"/>
+              <code value="C134003"/>
+              <display value="DUNS"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.3.6.1.4.1.519.1"/>
+          <value value="143265222"/>
+        </identifier>
+        <name value="Wunderwerke"/>
+        <contact>
+          <address>
+            <text value="Wunderwerke, 123 Scenic Road, CT, Bridgeport, USA 65478"/>
+            <line value="123 Scenic Road"/>
+            <city value="Bridgeport"/>
+            <state value="CT"/>
+            <postalCode value="65478"/>
+            <country value="USA"/>
+          </address>
+        </contact>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>
